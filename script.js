@@ -7,7 +7,7 @@ let workFromHome= "true";
 let side= 15; 
 let radius= 10;
 
-console.log("My name is" + myName);
+console.log("My name is " + myName);
 console.log("I work from home:" + workFromHome);
 console.log("The length of each side of the square is " + side);
 console.log("The radius of the circle is " + radius);
@@ -65,3 +65,28 @@ else {
     console.log(`Sorry. ${travelType} is an invalid option.`);
 }
 console.log(`Traveling ${distance} miles by ${travelType} took ${time} hours and cost $${cost}!`);
+
+let costBar = "Cost: ";
+// this loop repeats 1 time per hour
+costBar += "$"; // adds one $
+console.log(costBar); // "Cost: $"
+
+for (let i = 1; i <= cost ; i++) {
+    costBar += "$";
+}
+console.log(costBar); // "Cost: $"
+
+if (travelType === "car") {
+let = meterCostRemaining = 1.00;
+
+while (meterCostRemaining > 0 ) {
+    let coin = prompt (`$${meterCostRemaining} remaining. Type a coin to insert.`);
+    // TODO: check which coin was chosen: "quarter", "dime", "nickel", or "penny"
+    // and subtract that from meterCostRemaining
+    meterCostRemaining -= .25;
+    console.log("Meter cost remaining: " + meterCostRemaining);
+
+}
+console.log("You have paid the parking meter.");
+
+}
